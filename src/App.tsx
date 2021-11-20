@@ -1,8 +1,12 @@
 import "./app.scss";
-import Home from "./Home";
+// import Home from "./pages/Home";
+// import Watch from "./pages/Home/Watch";
+import Login from "./pages/Login";
+// import Register from "./pages/Register";
+
 
 function App() {
-  return <Home />;
+  return <Login />;
 }
 
 export default App;

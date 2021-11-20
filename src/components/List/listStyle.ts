@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { ArrowBackIosOutlined, ArrowForwardIosOutlined } from '@material-ui/icons'
 import { ArrowProps } from '../../types';
 export const ListContainer = styled.div`  
     width: 100%;
@@ -44,32 +43,4 @@ export const ListWrapper = styled.div<ArrowProps>`
         display: ${(props) => !props.isMoved ? 'none': 'inline-block'} !important;
         left: 0;
     }
-`
-export const SliderArrowLeft = styled(ArrowBackIosOutlined)<ArrowProps>`
-    display: ${(props) => !props.isMoved ? 'none': 'inline-block'} !important;
-    height: 100% !important;
-    background-color: rgb(22, 22, 22, 0.5);
-    width: 50px !important;
-    color: white;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    z-index: 99;
-    cursor: pointer;
-`
-
-export const SliderArrowRight = styled(ArrowForwardIosOutlined)`
-    height: 100% !important;
-    background-color: rgb(22, 22, 22, 0.5);
-    width: 50px !important;
-    color: white;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    right: 0;
-    z-index: 99;
-    cursor: pointer;
 `
